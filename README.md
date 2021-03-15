@@ -27,7 +27,7 @@ Para pegarmos as citações/frases, fazemos uma outra requisição para API onde
 Além disso, há também uma listagem de episódios. Os episódios estão sendo ordenados por episodesID e por eles não possuírem nenhuma outra informação que eu julguei ser relevante, não há nenhuma ação quando o usuário escolhe um episódio.
 
 
-Interface adaptável: Optei por utilizar storyboard, xibs e view code para demonstrar que estou habituado para trabalhar em diversas maneiras. Embora, deixo bem claro que a minha maneira preferida é view code, embora demande muito mais tempo para ser desenvolvido.
+Interface adaptável: Optei por utilizar storyboard, xibs e view code para demonstrar que estou habituado para trabalhar em diversas maneiras. Embora, deixo bem claro que a minha maneira preferida é view code.
 
 View Model: Estou acostumado a trabalhar com View Model desde outras plataformas, como C#/Xamarin e Android utilizando DataBinding. É de longe a maneira que sinto mais confortável em relação a padrão de arquitetura.
 
