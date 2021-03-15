@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="EpisodiosTableViewCell" rowHeight="111" id="Kgk-ef-R3X" customClass="EpisodiosTableViewCell" customModule="desafiosouth" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="111"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kgk-ef-R3X" id="Mj9-lz-7ny">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="111"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view alpha="0.20000000298023224" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kG0-aL-SEy">
+                        <rect key="frame" x="16" y="110.5" width="351" height="0.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="atE-yx-nbH"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nome do episódio" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UmF-he-1iv">
+                        <rect key="frame" x="40" y="11" width="315" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="ooB-Q3-bgT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Temporada" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VNU-hQ-kMu">
+                        <rect key="frame" x="40" y="61" width="315" height="50"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="VNU-hQ-kMu" firstAttribute="top" secondItem="UmF-he-1iv" secondAttribute="bottom" constant="10" id="6CO-r3-whV"/>
+                    <constraint firstAttribute="trailing" secondItem="kG0-aL-SEy" secondAttribute="trailing" constant="8" id="9r1-eh-yXO"/>
+                    <constraint firstItem="UmF-he-1iv" firstAttribute="top" secondItem="Mj9-lz-7ny" secondAttribute="topMargin" id="Akf-Qb-RU1"/>
+                    <constraint firstItem="UmF-he-1iv" firstAttribute="leading" secondItem="Mj9-lz-7ny" secondAttribute="leadingMargin" constant="20" id="Dsc-88-n6g"/>
+                    <constraint firstItem="VNU-hQ-kMu" firstAttribute="leading" secondItem="Mj9-lz-7ny" secondAttribute="leadingMargin" constant="20" id="G8w-bZ-hnC"/>
+                    <constraint firstItem="kG0-aL-SEy" firstAttribute="leading" secondItem="Mj9-lz-7ny" secondAttribute="leading" constant="16" id="P8o-ed-85a"/>
+                    <constraint firstAttribute="bottom" secondItem="kG0-aL-SEy" secondAttribute="bottom" id="TzG-ob-H8z"/>
+                    <constraint firstItem="VNU-hQ-kMu" firstAttribute="trailing" secondItem="UmF-he-1iv" secondAttribute="trailing" id="b5A-2B-ZGw"/>
+                    <constraint firstItem="VNU-hQ-kMu" firstAttribute="bottom" secondItem="kG0-aL-SEy" secondAttribute="bottom" id="hV7-vD-ga1"/>
+                    <constraint firstItem="UmF-he-1iv" firstAttribute="trailing" secondItem="Mj9-lz-7ny" secondAttribute="trailingMargin" id="zo2-rz-aTD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="temporadaEpisodio" destination="VNU-hQ-kMu" id="pzz-uV-S3T"/>
+                <outlet property="temporadaTitulo" destination="UmF-he-1iv" id="2IH-f5-hO5"/>
+            </connections>
+            <point key="canvasLocation" x="79.200000000000003" y="-160.56971514242881"/>
+        </tableViewCell>
+    </objects>
+</document>

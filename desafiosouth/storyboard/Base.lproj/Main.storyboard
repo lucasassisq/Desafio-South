@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4mg-KQ-NGa">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--HomeVC-->
+        <scene sceneID="EkW-wx-wWj">
+            <objects>
+                <viewController storyboardIdentifier="HomeVC" id="4mg-KQ-NGa" customClass="HomeVC" customModule="desafiosouth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wqj-qT-M2k">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personagens" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="vED-BR-iPi">
+                                <rect key="frame" x="8" y="76" width="157" height="33.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UsH-Yo-P3k" userLabel="DestaquesVC View">
+                                <rect key="frame" x="0.0" y="125.5" width="414" height="238"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="238" id="swB-La-2gU"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="2cf-so-Cn6" kind="embed" id="MgE-ZA-27Z"/>
+                                </connections>
+                            </containerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Episódios" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="VsO-Qa-NnK">
+                                <rect key="frame" x="8" y="383.5" width="117.5" height="33.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OlF-7j-mXH" userLabel="Demais View">
+                                <rect key="frame" x="0.0" y="424" width="414" height="389"/>
+                                <connections>
+                                    <segue destination="rCF-37-VnW" kind="embed" id="7cy-gA-GJd"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5oy-L7-Don"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UsH-Yo-P3k" firstAttribute="leading" secondItem="5oy-L7-Don" secondAttribute="leading" id="2wx-GP-Yk0"/>
+                            <constraint firstItem="5oy-L7-Don" firstAttribute="bottom" secondItem="OlF-7j-mXH" secondAttribute="bottom" id="BJe-Ll-fgq"/>
+                            <constraint firstItem="UsH-Yo-P3k" firstAttribute="trailing" secondItem="5oy-L7-Don" secondAttribute="trailing" id="BaN-4H-rYq"/>
+                            <constraint firstItem="5oy-L7-Don" firstAttribute="trailing" secondItem="OlF-7j-mXH" secondAttribute="trailing" id="FEW-aV-17d"/>
+                            <constraint firstItem="VsO-Qa-NnK" firstAttribute="leading" secondItem="5oy-L7-Don" secondAttribute="leading" constant="8" id="Nqi-gS-aCO"/>
+                            <constraint firstItem="5oy-L7-Don" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="VsO-Qa-NnK" secondAttribute="trailing" constant="317.5" id="aD1-C3-xVF"/>
+                            <constraint firstItem="5oy-L7-Don" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="vED-BR-iPi" secondAttribute="trailing" constant="316" id="aU0-3u-fPz"/>
+                            <constraint firstItem="OlF-7j-mXH" firstAttribute="top" secondItem="VsO-Qa-NnK" secondAttribute="bottom" constant="7" id="h9o-Gf-0de"/>
+                            <constraint firstItem="OlF-7j-mXH" firstAttribute="leading" secondItem="wqj-qT-M2k" secondAttribute="leading" id="i8i-aX-NaL"/>
+                            <constraint firstItem="UsH-Yo-P3k" firstAttribute="top" secondItem="vED-BR-iPi" secondAttribute="bottom" constant="16" id="iFr-r4-g0T"/>
+                            <constraint firstItem="VsO-Qa-NnK" firstAttribute="top" secondItem="UsH-Yo-P3k" secondAttribute="bottom" constant="20" id="nbS-MM-diI"/>
+                            <constraint firstItem="vED-BR-iPi" firstAttribute="top" secondItem="5oy-L7-Don" secondAttribute="top" constant="32" id="uSz-QD-CcY"/>
+                            <constraint firstItem="vED-BR-iPi" firstAttribute="leading" secondItem="5oy-L7-Don" secondAttribute="leading" constant="8" id="utD-Bh-t9s"/>
+                        </constraints>
+                    </view>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="episodesView" destination="OlF-7j-mXH" id="wsf-b6-e7e"/>
+                        <outlet property="personView" destination="UsH-Yo-P3k" id="8tj-hG-1p5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wNE-ir-isT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="899" y="94"/>
+        </scene>
+        <!--Citações-->
+        <scene sceneID="cF1-I8-jjO">
+            <objects>
+                <viewController storyboardIdentifier="PersonagemVC" title="Citações" useStoryboardIdentifierAsRestorationIdentifier="YES" id="wk5-vW-zJB" customClass="QuotesVC" customModule="desafiosouth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OMf-aa-ZMb">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="WiC-kM-rpk"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XkI-QI-k2s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="897" y="753"/>
+        </scene>
+        <!--Personagens Collection ViewVC-->
+        <scene sceneID="u1w-Ye-3RX">
+            <objects>
+                <viewController storyboardIdentifier="PersonagensCollectionViewVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2cf-so-Cn6" customClass="PersonagensCollectionViewVC" customModule="desafiosouth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sql-AD-Wv9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="238"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="nI9-mP-L29">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="238"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="5" id="JSa-PP-Iyi">
+                                    <size key="itemSize" width="130" height="218"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="4qF-aL-q4n"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="nI9-mP-L29" secondAttribute="trailing" id="261-Qv-t6t"/>
+                            <constraint firstAttribute="bottom" secondItem="nI9-mP-L29" secondAttribute="bottom" id="85G-DA-HL6"/>
+                            <constraint firstItem="nI9-mP-L29" firstAttribute="leading" secondItem="Sql-AD-Wv9" secondAttribute="leading" id="Toq-rD-S6x"/>
+                            <constraint firstItem="nI9-mP-L29" firstAttribute="top" secondItem="Sql-AD-Wv9" secondAttribute="top" id="nYi-6a-8G1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="personCollectionView" destination="nI9-mP-L29" id="bP9-wC-E5K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C8f-xu-fvg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1907" y="-117"/>
+        </scene>
+        <!--Episodios Table ViewVC-->
+        <scene sceneID="nCG-Fc-ETf">
+            <objects>
+                <viewController storyboardIdentifier="EpisodiosTableViewVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="rCF-37-VnW" customClass="EpisodiosTableViewVC" customModule="desafiosouth" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="y2l-kZ-1Ki">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="389"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="white" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="100" estimatedRowHeight="100" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HqW-BJ-XBR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="389"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="displayP3"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="qFa-1g-YPI"/>
+                        <constraints>
+                            <constraint firstItem="HqW-BJ-XBR" firstAttribute="top" secondItem="y2l-kZ-1Ki" secondAttribute="top" id="0vV-bb-Vnj"/>
+                            <constraint firstItem="HqW-BJ-XBR" firstAttribute="leading" secondItem="y2l-kZ-1Ki" secondAttribute="leading" id="85W-HB-DRo"/>
+                            <constraint firstAttribute="trailing" secondItem="HqW-BJ-XBR" secondAttribute="trailing" id="CxO-Gb-UXf"/>
+                            <constraint firstAttribute="bottom" secondItem="HqW-BJ-XBR" secondAttribute="bottom" id="u6B-Zf-1bB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="episodesTableView" destination="HqW-BJ-XBR" id="j5E-fQ-kbZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3ur-4g-JLb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1906" y="255"/>
+        </scene>
+    </scenes>
+</document>
