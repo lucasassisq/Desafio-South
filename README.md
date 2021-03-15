@@ -38,4 +38,13 @@ A minha ideia inicial era realizar uma listagem de episódios de Breaking Bad de
 
 RxCocoa: Na hora que vi que precisava trabalhar com listas e tive a ideia de listar episódios, personagens e verificar as citações de cada um da API de Breaking Bad, já pensei em RxSwift junto com RxCocoa na hora! Lindo a maneira onde a implementação ocorre na tableView, deixa o código muito mais clean e fica bem simples de entender! Acho uma ótima ferramenta.
 
+É isso! Não tive nenhuma dúvida do que era para ser desenvolvido do início ao fim. Ficou tudo muito claro.
+
+Espero que gostem!
+
+Att.
+
+Lucas!
+
+
 
