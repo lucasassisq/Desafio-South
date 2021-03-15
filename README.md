@@ -23,6 +23,7 @@ Primeiramente, achei super interessante a ideia de poder escolher o meu próprio
 
 A proposta do aplicativo é bem simples! Primeiramente, vamos listar alguns personagens da série ordenados de Z-A, porquê eu quero que o Walter White fique em um dos primeiros, hahaha! Ao usuário escolher algum desses personagens, abre um modal mostrando a foto do personagem e algumas citações/frases ditas por ele no decorrer da série. 
 Para pegarmos as citações/frases, fazemos uma outra requisição para API onde obtemos as informações e mostramos ao usuário.
+Ainda neste modal, é possível salvar a foto do personagem caso queira. Basta segurar na foto e escolher a opção de save no seu telefone.
 
 Além disso, há também uma listagem de episódios. Os episódios estão sendo ordenados por episodesID e por eles não possuírem nenhuma outra informação que eu julguei ser relevante, não há nenhuma ação quando o usuário escolhe um episódio.
 
@@ -45,6 +46,3 @@ Espero que gostem!
 Att.
 
 Lucas!
-
-
-
